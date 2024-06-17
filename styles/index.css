@@ -1,0 +1,334 @@
+.banner {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  position: relative;
+  color: var(--branco);
+
+  row-gap: 1em;
+}
+
+.header-site {
+  background-image: url("../img/banner.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.banner__title {
+  font-size: 105px;
+  padding: 0;
+  margin: 0;
+}
+
+.banner__text {
+  width: 23em;
+  text-align: center;
+  font-weight: 500;
+  line-height: 32px;
+  font-size: 18px;
+}
+
+.banner__buttons {
+  display: flex;
+  column-gap: 1em;
+  margin-top: 0.5em;
+}
+
+.banner__video {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -100;
+  overflow: hidden;
+}
+
+.banner__image {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -100;
+  overflow: hidden;
+}
+
+.banner__subtitle {
+  font-family: Space Mono, sans-serif;
+  text-transform: uppercase;
+  font-size: 14px;
+  font-weight: 400;
+  margin-bottom: -1em;
+}
+
+/* Explore Section */
+.explore-bikes {
+  padding: 4em 4em;
+}
+
+.explore-bikes ul {
+  display: flex;
+  list-style: none;
+  text-align: left;
+  column-gap: 2.2em;
+  margin: 0;
+  padding: 0;
+}
+
+.title-section {
+  font-size: 35px;
+  font-weight: 500;
+}
+
+.explore__items {
+  width: auto;
+}
+
+.explore__items a {
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 20px;
+  text-decoration: none;
+  color: var(--preto);
+  display: flex;
+  flex-direction: column;
+}
+
+.explore__items a:hover {
+  text-decoration: underline;
+}
+
+.explore__image {
+  width: 280px;
+  height: 360px;
+  height: auto;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.image-zoom {
+  display: inline-block;
+  overflow: hidden;
+}
+
+.explore__image:hover {
+  -moz-transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+}
+
+/* Introducao Section */
+
+.introducao {
+  padding: 6em 19em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.introducao__title {
+  font-size: 110px;
+  line-height: 110px;
+  margin: 0;
+}
+
+.introducao__container {
+  display: grid;
+  grid-template-columns: 1fr 1.5fr;
+  width: 100%;
+  height: 40em;
+}
+
+.container__text .button {
+  flex-grow: 0;
+}
+
+.container__text {
+  background-color: var(--preto);
+  color: var(--branco);
+  padding: 2.3em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.container__text .text {
+  font-size: 28px;
+  margin-bottom: 3em;
+}
+
+.container__image {
+  overflow: hidden;
+  object-fit: cover;
+}
+
+.container__image img {
+  object-fit: cover;
+  height: 100%;
+}
+
+/* Headline */
+
+.headline {
+  position: relative;
+  margin-left: 5.5em;
+  width: 100%;
+}
+
+.headline__title {
+  line-height: 65px;
+  font-size: 50px;
+}
+
+.label {
+  font-family: Space Mono, sans-serif;
+  font-size: 12px;
+  text-transform: uppercase;
+  color: var(--preto);
+  letter-spacing: 1px;
+}
+
+.rotate {
+  transform: rotate(-0.25turn);
+  position: absolute;
+  left: -4.5em;
+  top: -0.5em;
+}
+
+.headline__text {
+  font-size: 20px;
+  font-weight: 500;
+  margin-top: -2em;
+  padding-bottom: 3em;
+  width: 13em;
+}
+
+.headline-medium {
+  width: 30%;
+}
+
+.headline-small {
+  width: 3em;
+}
+
+.escolha__button {
+  padding: 1.5em 2.7em;
+}
+
+/* Escolha Trial */
+
+.escolha-trial {
+  display: grid;
+  grid-template-columns: 1.3fr 3fr;
+  height: auto;
+}
+
+/* Scrollable Product Content */
+.scrollable-container {
+  display: flex;
+  column-gap: 1.2em;
+}
+
+.scrollable__card {
+  display: flex;
+  flex-direction: column;
+  width: 22em;
+}
+
+.card__product {
+  position: relative;
+  background-color: var(--cinza-claro);
+  height: 350px;
+  padding: 0.7em 0.6em 0.1em 0.6em;
+  display: flex;
+  flex-direction: column;
+  border: 1px solid var(--cinza-claro);
+  transition: 0.3s;
+
+  &:hover {
+    border: 1px solid var(--cinza);
+
+    .card__image-box {
+      background-image: url("https://embed.widencdn.net/img/dorelrl/dvhasansoh/500px@1x/C21_C26351M_Trail_SL_3_RRD_3Q.webp?color=f8f8f8&q=99");
+    }
+  }
+
+  & > a:first-of-type {
+    display: block;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+  }
+}
+
+.card__compare {
+  align-self: flex-end;
+  text-decoration: none;
+  letter-spacing: 2px;
+  z-index: 1;
+
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+.card__bike {
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.card__price {
+  font-size: 16px;
+  font-weight: 400;
+  margin-top: -0.5em;
+}
+
+.card__image-box {
+  background-image: url("https://embed.widencdn.net/img/dorelrl/jrfpqnj8iu/500px@1x/C21_C26351M_Trail_SL_3_RRD_PD.webp?color=f8f8f8&q=99");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin: 2.5em 0 0 0;
+  align-self: center;
+  width: 95%;
+  height: 100%;
+}
+
+/* .card__image .card__image--hover {
+  object-fit: cover;
+  overflow: hidden;
+  width: 95%;
+  margin: 2.5em 0 1.5em 0;
+  align-self: center;
+}
+
+.card__image--hover {
+  display: none;
+}
+.card__image-box:hover .card__image {
+  display: none;
+}
+
+.card__image-box:hover .card__image--hover {
+  display: block;
+} */
+
+.card__text {
+  margin-left: 0.7em;
+  margin-top: 0.5em;
+  width: 80%;
+  font-size: 15px;
+  font-weight: 400;
+  color: var(--cinza);
+  line-height: 25px;
+}
+
+/* Cannondale in the wild */
