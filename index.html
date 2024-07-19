@@ -14,11 +14,12 @@
       href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap"
       rel="stylesheet"
     />
-    <link
+    <!-- <link
       rel="stylesheet"
       href="path/to/font-awesome/css/font-awesome.min.css"
-    />
+    /> -->
     <link rel="icon" href="/-/media/images/cannondale-newc-favicon-32x32.ashx" type="image/x-icon">
+    <script src="script.js" defer></script>
   </head>
   <body>
     <nav id="main-navbar">
@@ -29,14 +30,98 @@
         </ul>
       </div>
       <div id="navbar" class="nav">
-        <ul class="navbar__links">
-          <li><a href="#bikes">Bikes</a></li>
-          <li><a href="#eletricas">Elétricas</a></li>
-          <li><a href="#acessorios">Acessórios</a></li>
+        <ul class="navbar__links-container">
+          <li class="navbar__links bikes"><a href="#bikes">Bikes</a></li>
+          <li class="navbar__links eletricas"><a href="#eletricas">Elétricas</a></li>
+          <li class="navbar__links acessorios"><a href="#acessorios">Acessórios</a></li>
         </ul>
-        <img src="img/cannondale-logo-black.svg" alt="" class="navbar__logo" />
+        <img src="img/cannondale-logo-white.svg" alt="" class="navbar__logo" />
         <div class="navbar__search">
           <a href="">Search <i class="fa-solid fa-magnifying-glass"></i></a>
+        </div>
+      </div>
+
+      <div class="navbar__sublinks-container">
+        <div class="navbar__sublinks sublinks-bikes">
+          <div class="sublinks__selection-container">
+            <h3 class="sublinks__selection"><a href="">Procurar por categoria</a></h3>
+            <h3 class="sublinks__selection"><a href="">Procurar por modelo</a></h3>
+          </div>
+          <div class="sublinks__list-container">
+            <ul class="sublinks__list">
+              <li><a href="#" class="list__items">Estrada</a></li>
+              <li><a href="#" class="list__items">Race</a></li>
+              <li><a href="#" class="list__items">Endurance</a></li>
+              <li><a href="#" class="list__items">Gravel</a></li>
+              <li><a href="#" class="list__items">Road Ebikes</a></li>
+              <li><a href="#" class="sublinks__list__more">Veja Todas</a></li>
+            </ul>
+            <ul class="sublinks__list">
+              <li><a href="#" class="list__items">Mountain</a></li>
+              <li><a href="#" class="list__items">Cross Country</a></li>
+              <li><a href="#" class="list__items">Trilhas</a></li>
+              <li><a href="#" class="list__items">Mountain Ebikes</a></li>
+              <li><a href="#" class="sublinks__list__more">Veja Todas</a></li>
+            </ul>
+            <ul class="sublinks__list">
+              <li><a href="#" class="list__items">Urbana</a></li>
+              <li><a href="#" class="list__items">Fitness</a></li>
+              <li><a href="#" class="sublinks__list__more">Veja Todas</a></li>
+            </ul>
+            <ul class="sublinks__list">
+              <li><a href="#" class="list__items">Collections</a></li>
+              <li><a href="#" class="list__items">LAB71</a></li>
+              <li><a href="#" class="list__items">SmartSense</a></li>
+              <li><a href="#" class="list__items">Scalpel Family</a></li>
+            </ul>
+            <ul class="sublinks__list">
+              <li><a href="#" class="list__items">Buying Guides</a></li>
+              <li><a href="#" class="list__items">Road Bike Buying Guide</a></li>
+              <li><a href="#" class="list__items">Mountain Bike Buying Guide</a></li>
+              <li><a href="#" class="list__items">O que é uma E-bike?</a></li>
+              <li><a href="#" class="sublinks__list__more">Ver todos os guias</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="navbar__sublinks sublinks-acessorios">
+          <div class="sublinks__list-container">
+            <ul class="sublinks__list">
+              <li><a href="#" class="list__items">Equipamentos</a></li>
+              <li><a href="#" class="list__items">Bottles and Cages</a></li>
+              <li><a href="#" class="sublinks__list__more">Veja Todas</a></li>
+            </ul>
+
+            <ul class="sublinks__list">
+              <li><a href="#" class="list__items">Capacetes</a></li>
+              <li><a href="#" class="list__items">Adult</a></li>
+              <li><a href="#" class="list__items">Road</a></li>
+              <li><a href="#" class="list__items">Mountain</a></li>
+              <li><a href="#" class="sublinks__list__more">Ver todos os guias</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="navbar__sublinks sublinks-eletricas">
+          <div class="sublinks__list-container">
+            <ul class="sublinks__list">
+              <li><a href="#" class="list__items">E-MTB</a></li>
+              <li><a href="#" class="list__items">Habit Neo</a></li>
+              <li><a href="#" class="list__items">Moterra</a></li>
+              <li><a href="#" class="sublinks__list__more">Veja Todas</a></li>
+            </ul>
+            <ul class="sublinks__list">
+              <li><a href="#" class="list__items">E-Estrada</a></li>
+              <li><a href="#" class="sublinks__list__more">Veja Todas</a></li>
+            </ul>
+            <ul class="sublinks__list">
+              <li><a href="#" class="list__items">Buying Guides</a></li>
+              <li><a href="#" class="list__items">Road Bike Buying Guide</a></li>
+              <li><a href="#" class="list__items">Mountain Bike Buying Guide</a></li>
+              <li><a href="#" class="list__items">O que é uma E-bike?</a></li>
+              <li><a href="#" class="sublinks__list__more">Ver todos os guias</a></li>
+            </ul>
+          </div>
         </div>
       </div>
     </nav>
@@ -298,7 +383,5 @@
     </div>
       <div class="spacer-medium"></div>
     </footer>
-
-    <script src="script.js"></script>
   </body>
 </html>

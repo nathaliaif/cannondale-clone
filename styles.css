@@ -13,6 +13,7 @@ body {
   margin: 0;
   padding: 0;
   scroll-behavior: smooth;
+  overflow-x: hidden;
   box-sizing: border-box; //ensures that padding and border are included in the elements total width, preventing it from overflowing the viewport
 }
 
